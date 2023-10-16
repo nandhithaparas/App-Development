@@ -1,0 +1,143 @@
+/* Styles for the unique class 'navhome' */
+.navhome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  background: #232222;
+  z-index: 10;
+}
+
+.navhome.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+.navhome.sticky ul li a,
+.navhome.sticky .log {
+  color: #000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+.navhome .log {
+  position: relative;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+   font-size: 3em; 
+  letter-spacing: 2px;
+  transition: .4s;
+  font-family: 'Dancing Script', cursive;
+  
+}
+
+.navhome ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navhome ul li {
+  position: relative;
+  list-style: none;
+}
+
+.navhome ul li a {
+  position: relative;
+  padding: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+
+.navhome ul li a:hover,
+.navhome ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.menuToggle {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  background: #000 url(https://frezaeistudio.ir/wp-content/uploads/2020/12/toggle.png);
+  z-index: 2;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: .6s;
+  display: none;
+}
+
+.navhome.sticky .menuToggle {
+  filter: invert(1);
+}
+
+.menuToggle.active {
+  background: #000 url(https://frezaeistudio.ir/wp-content/uploads/2020/12/close.png);
+  z-index: 3;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  .navhome {
+    padding: 5px 100px;
+    background: #bdbcbc;
+  }
+
+  .navhome .log {
+    color: #000;
+  }
+
+  .menuToggle {
+    display:contents
+	
+  }
+  
+
+  .navmenu {
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: .6s;
+  }
+
+  .navhome ul li a {
+    color: #000;
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .navmenu ul {
+    display: block;
+    text-align: center;
+  }
+
+  .navmenu ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,29 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+  
+        - id: POSTS
+          uri: lb://POSTS-SERVER
+          predicates:
+            - Path=/posts/**
+             
+        - id: travelphotography-service-route
+          uri: lb://LOGIN-SERVER
+          predicates:
+            - Path=/auth/**
+            
+        - id: PROFILE
+          uri: lb://PROFILE-SERVER
+          predicates:
+            - Path=/profile/**
+            
+        - id: CONTACT
+          uri: lb://CONTACT-SERVER
+          predicates:
+            - Path=/contact/**
+            
+        - id: GUIDE
+          uri: lb://GUIDES-SERVER
+          predicates:
+            - Path=/guides/**

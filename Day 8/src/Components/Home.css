@@ -1,0 +1,272 @@
+
+#home{
+    height: 500px !important;
+}
+
+#portfolio{
+    height: 600px !important;
+}
+#contact{
+    height: 680px !important;
+}
+
+#about, #portfolio, #contact{
+    padding-top: 70px;
+}
+
+#home{
+    height: 100%;
+    width: 100%;   
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;   
+}
+
+#about{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    display: block;    
+}
+
+#portfolio{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 200%;
+    left: 0px;
+    display: block;
+}
+
+#contact{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 320%;
+    left: 0px;
+    display: block;   
+}
+.cenlogo img{
+    position: relative;
+    width: 240px;
+    height: 70%;
+    margin-left: 500px;
+   
+  }
+
+.navbar{   
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(254, 252, 252) !important;
+    z-index: 100;
+    display: block;   
+}
+
+nav ul{
+    padding-top: 7px;
+}
+
+nav li{
+    float: right;
+}
+
+nav li a{ 
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+    color: rgb(253, 248, 248);
+    background-color:transparent;
+    font-family: SF-Regular;
+}
+
+.lg-position{
+    padding-top: 20px !important;
+}
+
+.text-style{
+    font-family: SF-Regular;
+    font-weight: 800;
+}
+
+
+.tab-right{
+    float: right;
+    padding-bottom: 10px;
+    
+}
+.home-page{
+    padding-top: 100px;
+    font-family: SF-Regular;
+    font-weight: 800;
+
+}
+
+.style-name{
+    font-size: 90px;
+    color: rgb(6, 5, 5);
+}
+
+.style-description{
+    font-size: 35px;
+    padding-bottom: 25px;
+    color: rgb(135, 128, 128);
+}
+
+hr{
+    height: 3px !important;
+    background-color:rgb(7, 1, 1);
+}
+
+.btn{
+    color: #171515;
+}
+
+.btn{
+    color: #080808 !important;
+}
+
+ 
+.btn-twitter, 
+.btn-linkedin, 
+.btn-github
+{
+    font-size: 1.6em;
+    background-color:transparent;
+}
+
+.btnList{
+    padding-top: 30px;
+}
+
+
+
+.btn-twitter:hover{
+    background-color: #898e9052;
+}
+
+.btn-linkedin:hover{
+    background-color: #898e9050;
+}
+
+.btn-github:hover{
+    background-color: #898e9052;
+}
+
+
+
+.block{
+    border: 2px thin solid;
+}
+
+
+.about-info{
+    font-size: 22px;
+    color:#000;
+    font-family: SF-Regular;
+}
+
+.about-style{
+    
+    color: darkgrey;
+    opacity: 0.7;
+    padding-top: 40px;
+    padding-bottom: 30px;
+   
+    border-radius: 0.5%;
+}
+     
+
+
+.portfolio-item{
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+ 
+.portfolio-item:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+
+
+
+/* Form CSS*/
+.ccform {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.submit{
+    padding-left: 50px;
+}
+.ccfield-prepend{
+	margin-bottom:10px;
+	width:100%;
+}
+
+.ccform-addon{
+	color:000000; 
+	float:left;
+	padding:8px;
+	width:8%;
+	text-align:center;
+  padding-top: 15px;
+}
+
+.ccformfield {
+	color:#000000; 
+	background-color: rgb(247, 247, 240);
+	border:none;
+	padding:15.5px;
+	width:91.9%;
+	display:block;
+	font-family: SF-Regular;
+	font-size:14px;
+}
+
+.ccformfield {
+	font-family: SF-Regular;
+}
+.ccbtn{
+	display:block;
+	border:none;
+	background:rgb(18, 16, 16);
+	color:darkgray;
+	padding:12px 25px;
+	cursor:pointer;
+	text-decoration:none;
+	font-weight:bold;
+}
+.ccbtn:hover{
+	background-color: rgba(14, 15, 14, 0.537);
+}
+
+
+
+#footer{
+    position:fixed;
+    height:50px;
+    background-color:rgba(0, 0, 0, 0.51);
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+
+.footer-position{
+    font-family: SF-Regular;
+    color: white;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
